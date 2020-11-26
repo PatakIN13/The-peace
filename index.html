@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(61489846, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <meta name="yandex-verification" content="553f926666fc0f13" />
+    <link rel="stylesheet" href="roboto/roboto.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <link rel="stylesheet" href="modal/css/reset.css"> &lt;!&ndash; CSS reset &ndash;&gt;-->
+    <link rel="stylesheet" href="modal/css/styleModal.css"> <!-- Gem style -->
+    <script src="modal/js/modernizr.js"></script> <!-- Modernizr -->
+
+    <title>thepeace.world</title>
+    <script type="text/javascript">
+        function clock() {
+            var d = new Date();
+            var month_num = d.getMonth()+1
+            var day = d.getDate();
+            var hours = d.getHours();
+            var minutes = d.getMinutes();
+            var seconds = d.getSeconds();
+
+            month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+                "июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+            if (day <= 9) day = "0" + day;
+            if (hours <= 9) hours = "0" + hours;
+            if (minutes <= 9) minutes = "0" + minutes;
+            if (seconds <= 9) seconds = "0" + seconds;
+
+            date_time = d.getFullYear()+ "." + month_num + "." + day +"<br>"+ hours + ":" + minutes + ":" + seconds;
+            if (document.layers) {
+                document.layers.doc_time.document.write(date_time);
+                document.layers.doc_time.document.close();
+            }
+            else document.getElementById("doc_time").innerHTML = date_time;
+            setTimeout("clock()", 1000);
+        }
+
+    </script>
+    <script>
+        function clockM() {
+            var d = new Date();
+            var month_num = d.getMonth()+1
+            var day = d.getDate();
+            var hours = d.getHours();
+            var minutes = d.getMinutes();
+            var seconds = d.getSeconds();
+
+            month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+                "июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+            if (day <= 9) day = "0" + day;
+            if (hours <= 9) hours = "0" + hours;
+            if (minutes <= 9) minutes = "0" + minutes;
+            if (seconds <= 9) seconds = "0" + seconds;
+
+            date_time = d.getFullYear()+ "." + month_num + "." + day +"<br>"+ hours + ":" + minutes + ":" + seconds;
+            if (document.layers) {
+                document.layers.doc_time.document.write(date_time);
+                document.layers.doc_time.document.close();
+            }
+            else document.getElementById("doc_timeM").innerHTML = date_time;
+            setTimeout("clockM()", 1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="inner"><pre>International free internet platform</pre><pre>The peace</pre></div>
+        <div id="time">
+        <span id="doc_time">
+     Дата и время
+    </span>
+            <script type="text/javascript">
+                clock();
+            </script>
+        </div>
+    </div>
+<div id="content">
+    <div class="left">
+        <div id="video-bg">
+            <video autoplay loop muted playsinline width="100%" height="100%" preload="metadata" poster="img/004.png">
+                <source src="img/004.mp4" type="video/mp4">
+                <source src="img/004.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
+    <div class="right">
+        <div class="main-nav">
+            <div class="bntBorder">
+                <div class="button bnt" style="flex-direction: row; justify-content: flex-start;">
+                    <img src="img/time.png" width="100%" height="100%">
+                    <div id="timeM">
+        <span id="doc_timeM">
+     Дата и время
+    </span>
+                        <script type="text/javascript">
+                            clockM();
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <a class="cd-en-signin abnt" href="#0">
+            <div class="bntBorder">
+                <div class="button bnt">
+                    <span style="padding: 1vh;">Enter</span>
+                    <img class="logo_enter" src="img/united_kingdom_640.png">
+                </div>
+            </div>
+            </a>
+        <a class="cd-signin abnt" href="#0">
+        <div class="bntBorder">
+            <div class="button bnt">
+                <span style="padding: 1vh;">Войти</span>
+                <img class="logo_enter" src="img/russia_640.png">
+            </div>
+        </div>
+        </a>
+        <a class="cd-fr-signin abnt" href="#0">
+        <div class="bntBorder">
+            <div class="button bnt" >
+                <span style="padding: 1vh;">Entrer</span>
+                <img class="logo_enter" src="img/france_640.png">
+            </div>
+        </div>
+        </a>
+    </div>
+
+</div>
+</div>
+
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+        <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+            <ul class="cd-switcher">
+                <li><a href="#0">Вход</a></li>
+                <li><a href="#0">Регистрация</a></li>
+            </ul>
+
+            <div id="cd-login"> <!-- log in form -->
+                <form class="cd-form" action="login.php" method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Введите почту!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Пароль</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Пароль">
+                        <a href="#0" class="hide-password">Скрыть</a>
+                        <span class="cd-error-message">Введите пароль</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Запомнить</label>
+                    </p>
+                    <p class="fieldset" style="text-align: center;">
+                        <a href="https://oauth.vk.com/authorize?client_id=7283582&display=page&redirect_uri=http://thepeace.world/new/"><img src="modal/img/vk.png"></a>
+                        <a href="#"><img src="modal/img/fs.png"></a>
+                        <a href="#"><img src="modal/img/g+.png"></a>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Войти">
+                    </p>
+                    <p class="fieldset">
+                        <a href="./new/index.html"><input class="full-width" type="button" value="Я Гость"></a>
+                    </p>
+                </form>
+
+                <!--				<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>-->
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div> <!-- cd-login -->
+
+            <div id="cd-signup"> <!-- sign up form -->
+                <form class="cd-form" action="register.php">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Имя</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя">
+                        <span class="cd-error-message">Не может быть пустым</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Введите E-mail</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Пароль</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Пароль">
+                        <a href="#0" class="hide-password">Скрыть</a>
+                        <span class="cd-error-message">Введите пароль</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">Согласен с <a href="#0">Правилами</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Зарегистрироваться">
+                    </p>
+                </form>
+
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div> <!-- cd-signup -->
+
+            <a href="#0" class="cd-close-form">Закрыть</a>
+        </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+    <div class="cd-en-user-modal"> <!-- this is the entire modal form, including the background -->
+        <div class="cd-en-user-modal-container"> <!-- this is the container wrapper -->
+            <ul class="cd-en-switcher">
+                <li><a href="#0">Entry</a></li>
+                <li><a href="#0">Registration</a></li>
+            </ul>
+
+            <div id="cd-en-login"> <!-- log in form -->
+                <form class="cd-en-form" action="login.php" method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-en-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-en-error-message">Enter your mail!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-en-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-en-error-message">Enter password</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Remember</label>
+                    </p>
+                    <p class="fieldset" style="text-align: center;">
+                        <a href="https://oauth.vk.com/authorize?client_id=7283582&display=page&redirect_uri=http://thepeace.world/new/"><img src="modal/img/vk.png"></a>
+                        <a href="#"><img src="modal/img/fs.png"></a>
+                        <a href="#"><img src="modal/img/g+.png"></a>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Sign in">
+                    </p>
+                    <p class="fieldset">
+                        <a href="./new/EN.html"><input class="full-width" type="button" value="A guest"></a>
+                    </p>
+                </form>
+
+                <!--				<p class="cd-en-form-bottom-message"><a href="#0">Forgot your password?</a></p>-->
+                <!-- <a href="#0" class="cd-en-close-form">Close</a> -->
+            </div> <!-- cd-en-login -->
+
+            <div id="cd-en-signup"> <!-- sign up form -->
+                <form class="cd-en-form" action="register.php">
+                    <p class="fieldset">
+                        <label class="image-replace cd-en-username" for="signup-username">Name</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Name">
+                        <span class="cd-en-error-message">Cannot be empty</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-en-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-en-error-message">Enter Email</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-en-password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-en-error-message">Enter password</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">I agree The <a href="#0">Rules</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Sign up">
+                    </p>
+                </form>
+
+                <!-- <a href="#0" class="cd-en-close-form">Close</a> -->
+            </div> <!-- cd-en-signup -->
+
+            <a href="#0" class="cd-en-close-form">Close</a>
+        </div> <!-- cd-en-user-modal-container -->
+    </div> <!-- cd-en-user-modal -->
+    <div class="cd-fr-user-modal"> <!-- this is the entire modal form, including the background -->
+        <div class="cd-fr-user-modal-container"> <!-- this is the container wrapper -->
+            <ul class="cd-fr-switcher">
+                <li><a href="#0">Entrée</a></li>
+                <li><a href="#0">Inscription</a></li>
+            </ul>
+
+            <div id="cd-fr-login"> <!-- log in form -->
+                <form class="cd-fr-form" action="login.php" method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-fr-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-fr-error-message">Entrez votre courrier!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-fr-password" for="signin-password">Mot de passe</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Mot de passe">
+                        <a href="#0" class="hide-password">Cacher</a>
+                        <span class="cd-fr-error-message">Entrer le mot de passe</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Rappelles toi</label>
+                    </p>
+                    <p class="fieldset" style="text-align: center;">
+                        <a href="https://oauth.vk.com/authorize?client_id=7283582&display=page&redirect_uri=http://thepeace.world/new/"><img src="modal/img/vk.png"></a>
+                        <a href="#"><img src="modal/img/fs.png"></a>
+                        <a href="#"><img src="modal/img/g+.png"></a>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Se connecter">
+                    </p>
+                    <p class="fieldset">
+                        <a href="./new/FR/FR.html"><input class="full-width" type="button" value="Un invité"></a>
+                    </p>
+                </form>
+
+                <!--				<p class="cd-fr-form-bottom-message"><a href="#0">Forgot your password?</a></p>-->
+                <!-- <a href="#0" class="cd-fr-close-form">Close</a> -->
+            </div> <!-- cd-fr-login -->
+
+            <div id="cd-fr-signup"> <!-- sign up form -->
+                <form class="cd-fr-form" action="register.php">
+                    <p class="fieldset">
+                        <label class="image-replace cd-fr-username" for="signup-username">Nom</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Nom">
+                        <span class="cd-fr-error-message">Ne peux pas être vide</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-fr-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-fr-error-message">Entrez votre e-mail</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-fr-password" for="signup-password">Mot de passe</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Mot de passe">
+                        <a href="#0" class="hide-password">Cacher</a>
+                        <span class="cd-fr-error-message">Entrer le mot de passe</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">J'accepte les <a href="#0">Règles</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="S'inscrire">
+                    </p>
+                </form>
+
+                <!-- <a href="#0" class="cd-fr-close-form">Close</a> -->
+            </div> <!-- cd-fr-signup -->
+
+            <a href="#0" class="cd-fr-close-form">Close</a>
+        </div> <!-- cd-fr-user-modal-container -->
+    </div> <!-- cd-fr-user-modal -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="modal/js/mainen.js"></script>
+    <script src="modal/js/mainfr.js"></script>
+    <script src="modal/js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>

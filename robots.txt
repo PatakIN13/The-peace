@@ -1,0 +1,4 @@
+User-agent: *
+
+Host: thepeace.world
+Sitemap: http://thepeace.world/sitemap.xml

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate"><!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(61489846, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../roboto/roboto.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Slider/css/style.css">
+    <link rel="stylesheet" href="../css/StylePD.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="../slide/css/style.css">
+    <link rel="stylesheet" href="../slide/css/right-nav-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script rel="stylesheet" src="../Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
+    <script src="../js/time.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carouselhAuto').jsCarousel({
+                onthumbnailclick: function(src) { /* alert(src);*/  },  //функция при нажатии на картинку
+                autoscroll: true,   //вкл/выкл автопрокрутку
+                itemstodisplay: 2,  //сколько слайдов отображать
+                scrollspeed: 1500,  //время эффекта прокрутки
+                delay: 4000,        //время прокрутки слайдов
+                orientation: 'v',   //горизонтальная h или вертикальная v карусель
+                circular: false     //?
+            });
+        });
+    </script>
+    <title>Title</title>
+</head>
+<body id="L3">
+<div id="mobile">
+    <div id="all" class="d-flex flex-column my-flex-container">
+        <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
+            <a href="../../index.html" class="backa"><div class="back">
+                <span>In the main</span>
+            </div>
+            </a>
+            <div class="name d-flex flex-column">
+                <span>International free internet platform</span>
+                <span>The Peace</span>
+            </div>
+            <div id="doc_time" class="data">
+                <span>Дата</span>
+            </div>
+            <script type="text/javascript">
+                clock();
+            </script>
+        </div>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <!--
+        Выдвижную панель размещаете ниже
+        флажка (checkbox), но не обязательно
+        непосредственно после него, например
+        можно и в конце страницы
+        -->
+        <nav class="nav">
+            <!--
+        Метка с именем `id` чекбокса в `for` атрибуте
+        Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+        Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+        См: http://timpietrusky.com/advanced-checkbox-hack
+        -->
+
+            <!--
+        Здесь размещаете любую разметку,
+        если это меню, то скорее всего неупорядоченный список <ul>
+        -->
+            <ul class="navbar-nav mr-auto d-flex flex-column flex-wrap">
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="map.html">Maps</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/EN/almanahphone.html">Almanac</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="Arhiv.html">Archive</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Library</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Contests</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Photo-Diplomacy</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Topical</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Quotes</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/slovarEN.html">Vocabulary</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Chronology</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle" style="background-image: none" onclick></label>
+        <div id="allcontent" class="d-flex flex-column my-flex-container" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: auto 100%;background-position: 50% 0%">
+            <div id="leftcontent" class=" d-flex flex-column my-flex-item">
+                <div class="d-flex flex-row justify-content-center align-items-center" id="pd-up">
+                    <span class="name">
+                        Archive
+                    </span>
+                </div>
+                <div class="overflow-auto">
+                    <div class="arhivAll p-3 d-flex flex-row flex-wrap justify-content-center align-items-center text-center ">
+                        <div class="mapOneA">
+                            <div class="astule">
+                                <a href="../files/Helsinki_concluding_act_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Helsinki Final Act</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mapOneA">
+                            <div class="astule">
+                                <a href="../files/Paris_charter_for_new_Europe_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Charter of Paris for a new Europe</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mapOneA">
+                            <div class="astule">
+                                <a href="../files/Astana_Jubilee_Declaration_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Astana Anniversary Declaration</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="decktop">
+    <div id="all" class="d-flex flex-column my-flex-container">
+        <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
+            <div class="d-flex flex-column">
+                <a href="../../index.html" class="backa p-2"><div class="back">
+                    <span>In the main</span>
+                </div>
+                </a>
+                </a>
+
+            </div>
+            <div class="name d-flex flex-column">
+                <span>International free internet platform</span>
+                <span>The Peace</span>
+            </div>
+            <div id="doc_time1" class="data">
+                <span>Дата</span>
+            </div>
+            <script type="text/javascript">
+                clock1();
+            </script>
+        </div>
+        <div id="allcontent" class="d-flex flex-row my-flex-container">
+            <div id="left" class="d-flex flex-column  my-flex-container">
+                <div id="leftcontent" class="d-flex flex-column my-flex-item" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: 100% 100%;">
+                    <div class="langue">
+                        <a href="#"><img id="langue_en" src="../img/langue/united_kingdom_640.png" onclick="langueclick()"></a>
+                        <a href="../index.html"><img id="langue_rus"  class="d-none" src="../img/langue/russia_640.png"></a>
+                        <a href="../FR/FR.html"><img id="langue_fr" class="d-none" src="../img/langue/france_640.png"></a>
+                    </div>
+                    <script>
+                        function langueclick() {
+                            document.getElementById('langue_rus').classList.remove("d-none");
+                            document.getElementById('langue_fr').classList.remove("d-none");
+                            document.getElementById('langue_fr').classList.add("d-block");
+                            document.getElementById('langue_rus').classList.add("d-block");
+                            document.getElementById('langue_rusm').classList.remove("d-none");
+                            document.getElementById('langue_frm').classList.remove("d-none");
+                            document.getElementById('langue_frm').classList.add("d-block");
+                            document.getElementById('langue_rusm').classList.add("d-block");
+                        }
+                    </script>
+                    <div class="d-flex flex-row align-items-center" id="pd-up">
+                        <a href="./Arhiv.html" class="backa"><div class="back d-flex flex-row align-items-center">
+                            <div class="img-pd"><img src="../img/go-back.png" class="img-fluid"></div>
+                            <span>Return to</span>
+                        </div>
+                        </a>
+                        <span class="name">
+                            Archive
+                        </span>
+                    </div>
+                    <div class="arhivAll d-flex flex-row justify-content-center text-center ">
+                        <div class="arhivOne">
+                            <div class="astule">
+                                <a href="../files/Helsinki_concluding_act_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Helsinki Final Act</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="arhivOne">
+                            <div class="astule">
+                                <a href="../files/Paris_charter_for_new_Europe_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Charter of Paris for a new Europe</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="arhivOne">
+                            <div class="astule">
+                                <a href="../files/Astana_Jubilee_Declaration_Eng.pdf">
+                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
+                                    <div class="arhiveText"><span class="text-break"><i><u>Astana Anniversary Declaration</u></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="leftfooter" class=" d-flex flex-column my-flex-item">
+                    <div class="text-center-no text-center"><span>Topical</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="slider__item" onclick="window.open('http://www.stopwar.org.uk/index.php/news-comment/3549-the-afghanistan-war-is-more-than-a-1-trillion-mistake-it-s-a-travesty')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">The war in Afghanistan is more than a 1 trillion dollar error. This is a parody.</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1499')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Dagestan Peace Fund held a quiz “sport - the ambassador of peace” among the universities of the republic of Dagestan</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1497')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Want peace - get ready for peace</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1498')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">On the eve of national unity day, the traditional peacekeeping forum “we are different, we are together” took place in Kursk</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1496')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Days of Russian-German friendship - 2019 started</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1495')">
+                                <div class="slider__content">
+
+                                    <pre class="slider__content_title">The opening of the photo exhibition by Alexander Lvov “Russian Seasons. Solovki. "</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1494')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Annual meeting of the board of the Russian miran fund</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1493')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">The 8th international rally of young peacekeepers successfully completed its work in the city of military glory - Vladikavkaz</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <script language="JavaScript" type="text/javascript" src="../js/textedit.js"></script>
+                        <a class="slider__control slider__control_left" href="#" role="button"></a>
+                        <a class="slider__control slider__control_right" href="#" role="button"></a>
+                    </div>
+                </div>
+                <script language="JavaScript" type="text/javascript" src="../Slider/js/Script.js"></script>
+            </div>
+            <div id="right">
+                <div id="rightcontent" class=" d-flex flex-column my-flex-item">
+                    <div class="text-center-no text-center"><span>News</span><a href="#" id="closeR" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
+                    <div id="carouselhAuto">
+                        <div onclick="window.open('https://news.un.org/en/story/2020/02/1057681')"><img src="../img/us1.jpg" /><br /><span class="thumbnail-text">Amid ‘devastating scale’ of suffering in Syria’s north-west, UN Security Council urged to find political way forward</span></a></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070312')"><img src="../img/us2.jpg" /><br /><span class="thumbnail-text">Virtual Concert unites Pacific with the world in battling COVID-19</a></span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2020/02/1057671')"><img src="../img/us3.jpg" /><br /><span class="thumbnail-text">‘Not a single country’ does enough to help children flourish, say health experts</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070282')"><img src="../img/us4.jpg" /><br /><span class="thumbnail-text">Real Life Heroes: delivering aid under fire</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2020/01/1055452')"><img src="../img/us5.jpg" /><br /><span class="thumbnail-text">Tackling femicide in Argentina: a UN Resident Coordinator blog</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070292')"><img src="../img/us6.jpg" /><br /><span class="thumbnail-text">Real Life Heroes: building trust, and saving lives</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $(document).ready(function(){
+        window.scrollTo(0,1);
+        $(".closeNews").click(function() {
+            let closeid = this.id;
+            if (closeid == "closeR"){
+                document.getElementById('right').style.display = 'none';
+                document.getElementById('left').style.width = '100%';
+            }
+            if (closeid == "closeF"){
+                document.getElementById('leftfooter').classList.remove("d-flex");
+                document.getElementById('leftfooter').classList.add("d-none");
+                document.getElementById('leftfooterm').classList.remove("d-flex");
+                document.getElementById('leftfooterm').classList.add("d-none");
+            }
+        });
+    });
+</script>
+</html>

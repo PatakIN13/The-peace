@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate"><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(61489846, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="roboto/roboto.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Slider/css/style.css">
+    <link rel="stylesheet" href="css/StylePD.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="slide/css/style.css">
+    <link rel="stylesheet" href="slide/css/right-nav-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script rel="stylesheet" src="Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
+    <script src="js/time.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carouselhAuto').jsCarousel({
+                onthumbnailclick: function(src) { /* alert(src);*/  },  //функция при нажатии на картинку
+                autoscroll: true,   //вкл/выкл автопрокрутку
+                itemstodisplay: 2,  //сколько слайдов отображать
+                scrollspeed: 1500,  //время эффекта прокрутки
+                delay: 4000,        //время прокрутки слайдов
+                orientation: 'v',   //горизонтальная h или вертикальная v карусель
+                circular: false     //?
+            });
+        });
+    </script>
+    <title>Title</title>
+</head>
+<body id="L3">
+<div id="mobile">
+    <div id="all" class="d-flex flex-column my-flex-container">
+        <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
+            <a href="../index.html" class="backa"><div class="back">
+                <span>На Главную</span>
+            </div>
+            </a>
+            <div class="name d-flex flex-column">
+                <span>International free internet platform</span>
+                <span>The Peace</span>
+            </div>
+            <div id="doc_time" class="data">
+                <span>Дата</span>
+            </div>
+            <script type="text/javascript">
+                clock();
+            </script>
+        </div>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <!--
+        Выдвижную панель размещаете ниже
+        флажка (checkbox), но не обязательно
+        непосредственно после него, например
+        можно и в конце страницы
+        -->
+        <nav class="nav">
+            <!--
+        Метка с именем `id` чекбокса в `for` атрибуте
+        Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+        Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+        См: http://timpietrusky.com/advanced-checkbox-hack
+        -->
+
+            <!--
+        Здесь размещаете любую разметку,
+        если это меню, то скорее всего неупорядоченный список <ul>
+        -->
+            <ul class="navbar-nav mr-auto d-flex flex-column flex-wrap">
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="blog.html">Блоги</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/almanahphone.html">Альманах</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="Arhiv.html">Архив</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="biblio.html">Библиотека</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://forpeace.world/">Конкурсы</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="pd.html">Photo-Diplomacy</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="news.html">Новости</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="aktual.html">Актуальное</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/quotes.html">Цитаты</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/slovar.html">Словарь</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="http://thepeacewords.world/Hrono.html">Хронология</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#"><img src="img/icontech.png" width="10%" height="auto">
+                        <span>
+                    Нашли ошибку, напишите:
+                    <br>
+                    thepeace.world@yandex.ru
+                    </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle" style="background-image: none" onclick></label>
+        <div id="allcontent" class="d-flex flex-column my-flex-container">
+            <div id="leftcontent" class=" d-flex flex-column my-flex-item">
+                <div class="d-flex flex-row justify-content-center align-items-center" id="pd-up">
+                    <span class="name">
+                        Новости
+                    </span>
+                </div>
+                <div id="blogsq" class="overflow-auto">
+                    <div id="newsall" class="d-flex flex-column flex-wrap">
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2020/01/1369981')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
+            В Сирии в результате обстрела школы погибли и ранены дети</span></a></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2019/11/1367891')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
+            Выступая на форуме в Берлине, глава ООН призвал не возводить «виртуальные стены в интернете»</a></span></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2019/11/1367851')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
+            Вирус иммунодефицита отступает там, где у ВИЧ-инфицированных есть права и возможности</span></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2019/11/1367861')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
+            Спутниковые съемки и лазерное сканирование: новейшие технологии в борьбе с ИГИЛ</span></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2019/11/1367791')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
+            Парниковые газы продолжают накапливаться в атмосфере – новый рекорд</span></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2020/01/1369991')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
+            Медсестры и акушерки составляют «костяк» системы здравоохранения, но их не хватает</span></div>
+                        <div class="news p-3" onclick="window.open('https://news.un.org/ru/story/2019/11/1367781')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
+            В ООН призывают стоматологов отказаться от пломб с ртутью</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="decktop">
+    <div id="all" class="d-flex flex-column my-flex-container">
+        <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
+            <a href="../index.html" class="backa"><div class="back">
+                <span>На Главную</span>
+            </div>
+            </a>
+            <div class="name d-flex flex-column">
+                <span>International free internet platform</span>
+                <span>The Peace</span>
+            </div>
+            <div id="doc_time1" class="data">
+                <span>Дата</span>
+            </div>
+            <script type="text/javascript">
+                clock1();
+            </script>
+        </div>
+        <div id="allcontent" class="d-flex flex-row my-flex-container">
+            <div id="left" class="d-flex flex-column  my-flex-container">
+                <div id="leftcontent" class="d-flex flex-column my-flex-item">
+                    <div class="langue">
+                        <img id="langue_rus" src="img/langue/russia_640.png" onclick="langueclick()">
+                        <a href="EN.html"><img id="langue_en" class="d-none " src="img/langue/united_kingdom_640.png"></a>
+                        <a href="FR/FR.html"><img id="langue_fr" class="d-none" src="img/langue/france_640.png"></a>
+                    </div>
+                    <script>
+                        function langueclick() {
+                            document.getElementById('langue_en').classList.remove("d-none");
+                            document.getElementById('langue_fr').classList.remove("d-none");
+                            document.getElementById('langue_fr').classList.add("d-block");
+                            document.getElementById('langue_en').classList.add("d-block");
+                            document.getElementById('langue_enm').classList.remove("d-none");
+                            document.getElementById('langue_frm').classList.remove("d-none");
+                            document.getElementById('langue_frm').classList.add("d-block");
+                            document.getElementById('langue_enm').classList.add("d-block");
+                        }
+                    </script>
+                    <div class="d-flex flex-row align-items-center" id="pd-up">
+                        <a href="./index.html" class="backa"><div class="back d-flex flex-row align-items-center">
+                            <div class="img-pd"><img src="img/go-back.png" class="img-fluid"></div>
+                            <span>Назад</span>
+                        </div>
+                        </a>
+                        <h2 class="mr-auto">
+                            Цитаты
+                        </h2>
+                    </div>
+                    <div id="blogsq" class="overflow-auto">
+                        <div id="blogsmain" class="d-flex flex-column p-2">
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h1>Люди о земле войне и мире</h1></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Древнй мир</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«От войны нельзя ждать никаких благ». <span class="font-weight-light"> Вергилий М. Публий</span></p>
+                                        <p>«Война – учитель насилия». <span class="font-weight-light"> Фукидид</span></p>
+                                        <p>«Хотя война ставит, быть может, целью спокойствие, но она несомненное зло». <span class="font-weight-light"> Лао-Цзы</span></p>
+                                        <p>«Лучше вечный мир, чем мечты о победе». <span class="font-weight-light"> Тит Ливий</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h1>Пословцы и поговорки народов мира</h1></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Европа</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Худой мир лучше доброй драки (ссоры)». <span class="font-weight-light"> Русская пословица</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h1>XVIII - XIX Век</h1></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Европа</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Война есть продолжение политики другими средствами». <span class="font-weight-light"> Карл Клаузевиц</span></p>
+                                        <p>«Довольно с нас великих войн; мне кажется, что наступило время великого мира». <span class="font-weight-light"> Оноре Бальзак</span></p>
+                                        <p>«Мир – благодетель цивилизации, война ее преступление». <span class="font-weight-light"> Виктор Гюго</span></p>
+                                        <p>«Зло войны и благо мира до такой степени известны людям, что с тех пор как мы знаем людей, сам лучшим пожеланием было приветствие «Мир вам!»». <span class="font-weight-light"> Лев Толстой</span></p>
+                                        <p>«Гораздо легче выиграть войну, чем мир». <span class="font-weight-light"> Жорж Клемансо</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Северная Америка</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Не бывает хорошей войны и плохого мира». <span class="font-weight-light"> Бенджамин Франклин</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h1>ХХ – XXI Век</h1></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Европа</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Я не знаю каким оружием будут сражаться в Третьей мировой войне, но в Четвертой будут сражаться камнями и палками». <span class="font-weight-light"> Альберт Эйнштейн</span></p>
+                                        <p>«Почему люди смогли создать атомное оружие, но не могут установить контроль над ним? Это очень просто, мои дорогие: потому что политика гораздо сложнее, чем физика». <span class="font-weight-light"> Альберт Эйнштейн</span></p>
+                                        <p>«Мирному сосуществованию можно противопоставить военное несосуществование». <span class="font-weight-light"> Английские сценаристы Джонотан Линн и Энтони Джей</span></p>
+                                        <p>«Дайте Миру шанс!». <span class="font-weight-light"> Джон Леннон</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Азия и Океания</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Если мы хотим достичь настоящего мира во всем мире, то начинать надо с детей». <span class="font-weight-light"> Махатма Ганди</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quotesmain d-flex flex-column justify-content-around align-items-center">
+                                <div class="zagolovok"><h2>Северная Америка</h2></div>
+                                <div class="quotes">
+                                    <div class="quote text-center">
+                                        <p>«Войны заразны». <span class="font-weight-light"> Франклин Рузвельт</span></p>
+                                        <p>«Мы сделали работу за дьявола». <span class="font-weight-light"> Роберт Оппенгеймер (после испытания атомной бомбы)</span></p>
+                                        <p>«Зло гнездится не в атоме, а человеческих душах». <span class="font-weight-light"> Эдлай Стивенсон</span></p>
+                                        <p>«Либо человечество покончит с войной, либо война покончит с человечеством».  <span class="font-weight-light"> Джон Кеннеди</span></p>
+                                        <p>«Мир – это дорога в тысячу миль, и пройти ее нужно шаг за шагом». <span class="font-weight-light"> Линдон Джонсон</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="leftfooter" class=" d-flex flex-column my-flex-item">
+                    <div class="text-center-no text-center"><span>Актуальное</span></div>
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1499')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-1.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">Дагестанский фонд мира провел викторину «спорт - посол мира» среди вузов республики дагестан</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1497')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-2.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">Хочешь мира - готовься к миру</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1498')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-3.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">Накануне дня народного единства в курске прошел традиционный миротворческий форум «мы - разные, мы - вместе»</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1496')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-4.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">Дни российско-немецкой дружбы – 2019 стартовали</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1495')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-5.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+
+                                    <pre class="slider__content_title">Состоялось открытие фотовыставки Александра Львова «Русские сезоны. Соловки».</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1494')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-6.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">Ежегодное заседание правления российского фонда миран</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://www.peacefond.ru/news/?id=1493')">
+                                <div class="slider__content">
+                                    <div class="slider__content_header">
+                                        <img class="slider__content_img" src="/example/img/s-7.jpg" alt="">
+                                        <span class="slider__content_section"></span>
+                                    </div>
+                                    <pre class="slider__content_title">8–й международный слет юных миротворцев успешно завершил свою работу в городе воинской славы –владикавказе</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_left" href="#" role="button"></a>
+                        <a class="slider__control slider__control_right" href="#" role="button"></a>
+                    </div>
+                </div>
+                <script language="JavaScript" type="text/javascript" src="./Slider/js/Script.js"></script>
+            </div>
+            <div id="right">
+                <div id="rightcontent" class=" d-flex flex-column my-flex-item">
+                    <div class="text-center-no text-center"><span>Новости</span></div>
+                    <div id="carouselhAuto">
+    <div onclick="window.open('https://news.un.org/ru/story/2020/06/1380982')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
+           ВОЗ направила помощь Азербайджану, Беларуси и Украине</a></span></div>
+<div onclick="window.open('https://news.un.org/ru/story/2020/06/1381002')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
+            COVID-19: малый бизнес нуждается в поддержке</span></a></div>
+<div onclick="window.open('https://news.un.org/ru/story/2020/06/1381052')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
+            Эксперты ВОЗ помогли Узбекистану расширить возможности тестирования на COVID-19</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2020/06/1380052')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
+            CГлава ООН призвал дать возможность морским экипажам вернуться на родину</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2020/06/1380002')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
+            В Международном уголовном суде назвали недопустимым решение США принять ограничения в отношении его сотрудников</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2020/06/1379992')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
+            Без финансовой помощи миллионы йеменцев останутся без воды в период пандемии</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2020/06/1379952')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
+            Инвестировать в возобновляемые источники энергии – не только правильно, но и выгодно</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+</html>
