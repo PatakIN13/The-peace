@@ -9520,7 +9520,7 @@ var plugin = $.ui.plugin = {
 var safeBlur = $.ui.safeBlur = function( element ) {
 
 	// Support: IE9 - 10 only
-	// If the <body> is blurred, IE will switch windows, see #9420
+	// If the <body onload="time()"> is blurred, IE will switch windows, see #9420
 	if ( element && element.nodeName.toLowerCase() !== "body" ) {
 		$( element ).trigger( "blur" );
 	}

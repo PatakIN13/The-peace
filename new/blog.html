@@ -31,6 +31,19 @@
     <script rel="stylesheet" src="Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
     <script src="js/time.js"></script>
     <script>
+        timeend= new Date(2021, 2, 12, 14, 00);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +":"+ thour+":"+tmin+":"+tsec+"";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
+    <script>
         $(document).ready(function() {
             $('#carouselhAuto').jsCarousel({
                 onthumbnailclick: function(src) { /* alert(src);*/  },  //функция при нажатии на картинку
@@ -45,7 +58,7 @@
     </script>
     <title>Title</title>
 </head>
-<body id="L3">
+<body onload="time()" id="L3">
 <div id="mobile">
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
@@ -628,6 +641,8 @@
             </div>
             <div>
                 <a style="color: red;" href="event.html">Круглый стол<br>БОРЬБА ЗА МИР – УРОКИ ИСТОРИИ</a>
+                <br>
+                <span id="t" style="font-size:20px"></span>
             </div>
             <div id="doc_time1" class="data">
                 <span>Дата</span>
