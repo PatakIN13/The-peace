@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate"><!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(61489846, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+        ym(61489846, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="../roboto/roboto.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Slider/css/style.css">
-    <link rel="stylesheet" href="../css/StylePD.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="../css/simple-sidebar.css" rel="stylesheet">
     <script src="../js/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" href="../slide/css/style.css">
-    <link rel="stylesheet" href="../slide/css/right-nav-style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script rel="stylesheet" src="../Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../clock/css/style.css">
+    <link rel="stylesheet" href="../slide/css/style.css">
+    <link rel="stylesheet" href="../slide/css/right-nav-style.css">
     <script src="../js/time.js"></script>
     <script>
         timeend= new Date(2021, 2, 12, 16, 00);
@@ -62,7 +63,7 @@
 <div id="mobile">
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
-            <a href="../index.html" class="backa"><div class="back">
+            <a href="../../index.html" class="backa"><div class="back">
                 <span>Au principal</span>
             </div>
             </a>
@@ -139,35 +140,41 @@
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle" style="background-image: none" onclick></label>
-        <div id="allcontent" class="d-flex flex-column my-flex-container" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: auto 100%;background-position: 50% 0%">
+        <div id="allcontent" class="d-flex flex-column my-flex-container">
             <div id="leftcontent" class=" d-flex flex-column my-flex-item">
                 <div class="d-flex flex-row justify-content-center align-items-center" id="pd-up">
                     <span class="name">
-                        Archiver
+                        Activité
                     </span>
                 </div>
-                <div id="arhives" class="overflow-auto">
-                    <div id="arhiv" class="d-flex flex-row justify-content-center align-items-center text-center p-2">
-                        <a href="doc.html" class="arhiv-d">
-                            <div id="doc">
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Des documents</span></div>
+
+                <div id="blogs" class="overflow-auto">
+                    <div id="blogsmain" class="d-flex flex-column p-2">
+                        <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                            <div class="data text-center d-flex flex-column justify-content-center align-items-center">
+                                <span>12</span><span>March</span><span>2021</span>
                             </div>
-                        </a>
-                        <a href="#" class="arhiv-d">
-                            <div>
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Photo</span></div>
+                            <div class="zaguser d-flex flex-column p-2 ">
+                                <div class="zag"> <h4>LA TABLE RONDE "LA LUTTE POUR LES LEÇONS DE L'HISTOIRE DE LA PAIX"</h4></div>
+                                <div class="user"><span></span></div>
                             </div>
-                        </a>
-                        <a href="#" class="arhiv-d">
-                            <div >
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Vidéo</span></div>
+                            <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                <div class="userimg">
+                                    <img src="../img/logoevents.jpg">
+                                </div>
+                                <!--                                <div class="reg d-flex flex-row align-items-center">-->
+                                <!--                                    <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+                                <!--                                        <path fill="currentColor"-->
+                                <!--                                              d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+                                <!--                                        </path>-->
+                                <!--                                    </svg>-->
+                                <!--                                    <span class="slider__content_views">860</span>-->
+                                <!--                                </div>-->
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -179,7 +186,7 @@
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
             <div class="d-flex flex-column">
                 <a href="../../index.html" class="backa p-2"><div class="back">
-                    <span>Au principal</span>
+                    <span>En général</span>
                 </div>
                 </a>
                 </a>
@@ -203,7 +210,7 @@
         </div>
         <div id="allcontent" class="d-flex flex-row my-flex-container">
             <div id="left" class="d-flex flex-column  my-flex-container">
-                <div id="leftcontent" class="d-flex flex-column my-flex-item" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: 100% 100%;">
+                <div id="leftcontent" class="d-flex flex-column my-flex-item">
                     <div class="langue">
                         <a href="#"><img id="langue_fr" src="../img/langue/france_640.png" onclick="langueclick()"></a>
                         <a href="../index.html"><img id="langue_rus" class="d-none" src="../img/langue/russia_640.png"></a>
@@ -224,39 +231,43 @@
                     <div class="d-flex flex-row align-items-center" id="pd-up">
                         <a href="./FR.html" class="backa"><div class="back d-flex flex-row align-items-center">
                             <div class="img-pd"><img src="../img/go-back.png" class="img-fluid"></div>
-                            <span>Retour à</span>
+                            <span>Retourner à</span>
                         </div>
                         </a>
                         <span class="name">
-                            Archiver
+                           Activité
                         </span>
                     </div>
-                    <div id="arhives" class="overflow-auto">
-                        <div id="arhiv" class="d-flex flex-row justify-content-center align-content-center text-center p-2">
-                            <a href="doc.html" class="arhiv-d">
-                            <div id="doc">
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Des documents</span></div>
+                    <div id="blogs" class="overflow-auto">
+                        <div id="blogsmain" class="d-flex flex-column p-2">
+                            <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                                <div class="data text-center">
+                                    <span>12<br>March<br>2021</span>
+                                </div>
+                                <div class="zaguser d-flex flex-column p-2 ">
+                                    <div class="zag"> <h4>LA TABLE RONDE "LA LUTTE POUR LES LEÇONS DE L'HISTOIRE DE LA PAIX"</h4></div>
+                                    <div class="user"><span></span></div>
+                                </div>
+                                <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                    <div class="userimg">
+                                        <img src="../img/logoevents.jpg">
+                                    </div>
+                                    <!--                                    <div class="reg d-flex flex-row align-items-center">-->
+                                    <!--                                        <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+                                    <!--                                            <path fill="currentColor"-->
+                                    <!--                                                  d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+                                    <!--                                            </path>-->
+                                    <!--                                        </svg>-->
+                                    <!--                                        <span class="slider__content_views">860</span>-->
+                                    <!--                                    </div>-->
+                                </div>
                             </div>
-                            </a>
-                            <a href="#" class="arhiv-d">
-                            <div>
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Photo</span></div>
-                            </div>
-                            </a>
-                            <a href="#" class="arhiv-d">
-                            <div >
-                                <div><img src="../img/doc.png"></div>
-                                <div><span>Vidéo</span></div>
-                            </div>
-                            </a>
                         </div>
                     </div>
 
                 </div>
                 <div id="leftfooter" class=" d-flex flex-column my-flex-item">
-                    <div class="text-center-no text-center"><span>Topique</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
+                    <div class="text-center-no text-center"><span>Topique</span><a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
                     <div class="slider">
                         <div class="slider__wrapper">
                             <div class="slider__item" onclick="window.open('http://www.stopwar.org.uk/index.php/news-comment/3746-lobby-your-mp-stop-arming-saudi-stop-bombing-yemen')">
@@ -310,11 +321,11 @@
                         <div onclick="window.open('https://news.un.org/fr/story/2020/07/1073511')"><img src="../img/fr5.jpg" /><br /><span class="thumbnail-text">Conflit israélo-palestinien : l’envoyé de l’ONU appelle à relancer la diplomatie</span></div>
                         <div onclick="window.open('https://news.un.org/fr/story/2020/08/1075092')"><img src="../img/fr6.jpg" /><br /><span class="thumbnail-text">Somalie : l’ONU condamne une attaque terroriste meurtrière contre un hôtel de Mogadiscio</span></div>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 </body>
 <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>

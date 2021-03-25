@@ -36,6 +36,19 @@
     <script rel="stylesheet" src="Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
     <script src="leaflet/leaflet-src.js"></script>
     <script src="js/time.js"></script>
+    <script>
+        timeend= new Date(2021, 2, 12, 16, 00);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +":"+ thour+":"+tmin+":"+tsec+"";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
     <script src="MapTest.js"></script>
     <script src="https://unpkg.com/osme"></script>
     <script>
@@ -53,7 +66,7 @@
     </script>
     <title>Title</title>
 </head>
-<body id="L3">
+<body onload="time()" id="L3">
 <div id="mobile">
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
@@ -93,7 +106,7 @@
         -->
             <ul class="navbar-nav mr-auto d-flex flex-column flex-wrap">
                 <li class="nav-item p-2">
-                    <a class="nav-link" href="blog.html">Блоги</a>
+                    <a class="nav-link" href="events.html">Мероприятия</a>
                 </li>
                 <li class="nav-item p-2">
                     <a class="nav-link" href="http://thepeacewords.world/almanahphone.html">Альманах</a>
@@ -182,6 +195,11 @@
             <div class="name d-flex flex-column">
                 <span>International free internet platform</span>
                 <span>The Peace</span>
+            </div>
+            <div>
+                <a style="color: red;" href="event.html">Круглый стол<br>БОРЬБА ЗА МИР – УРОКИ ИСТОРИИ</a>
+                <br>
+
             </div>
             <div id="doc_time1" class="data">
                 <span>Дата</span>
@@ -283,54 +301,55 @@
                     <div class="text-center-no text-center"><span>Актуальное</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="img/close.png"></a></div>
                     <div class="slider">
      <div class="slider__wrapper">
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1546')">
+    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1556')">
         <div class="slider__content">
-            <pre class="slider__content_title">ТОЛЕРАНТНОСТЬ-ПУТЬ К МИРУ!</pre>
+            <pre class="slider__content_title">РОССИЙСКИЙ ФОНД МИРА ПОЗДРАВИЛ С НОВЫМ ГОДОМ ПОДОПЕЧНЫХ КОМИССИИ ПО ДЕЛАМ НЕСОВЕРШЕННОЛЕТНИХ Г.КРАСНОАРМЕЙСКА
+</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/aleksandr-yakubovskij-edinaya-rossiya-podderzhivaet-predlozhenie-minstroya-vnesti-stroyashiesya-chastnye-doma-v-edinuyu-sistemu')">
+    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/andrej-turchak-prizval-vseh-neravnodushnyh-vozlozhit-cvety-k-voinskim-memorialam-23-fevralya')">
         <div class="slider__content">
-            <pre class="slider__content_title">Александр Якубовский: «Единая Россия» поддерживает предложение Минстроя внести строящиеся частные дома в единую систему</pre>
+            <pre class="slider__content_title">Андрей Турчак призвал всех неравнодушных возложить цветы к воинским мемориалам 23 февраля</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/trump-takes-the-world-close-to-waragain/')">
+    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/dominic-raabs-call-for-a-global-ceasefire-is-undiluted-hypocrisy/')">
         <div class="slider__content">
-            <pre class="slider__content_title">ТРАМП ПРИНИМАЕТ МИР К ВОЙНЕ… СНОВА</pre>
+            <pre class="slider__content_title">ПРИЗЫВ ДОМИНИЧЕСКОГО РААБА К ГЛОБАЛЬНОМУ ПРЕКРАЩЕНИЮ НЕРАЗБАВЛЕННОЙ ГИПОКРИЗИИ</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1543')">
+    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1555')">
         <div class="slider__content">
-            <pre class="slider__content_title">ЕЖЕГОДНОЕ ЗАСЕДАНИЕ ПРАВЛЕНИЯ РОССИЙСКОГО ФОНДА МИРА</pre>
+            <pre class="slider__content_title">ПРОЕКТ «А ЖИЛИ МЫ ВМЕСТЕ СЕМЬЕЮ ЕДИНОЙ»</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/kakie-mery-podderzhki-i-lgoty-polozheny-studentam-razyasnyaet-alyona-arshinova')">
+    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/gosduma-prinyala-zakon-edinoj-rossii-stimuliruyushij-razvitie-vnutrennego-turizma')">
         <div class="slider__content">
-            <pre class="slider__content_title">Какие меры поддержки и льготы положены студентам? Разъясняет Алёна Аршинова</pre>
+            <pre class="slider__content_title">Госдума приняла закон «Единой России», стимулирующий развитие внутреннего туризма</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/10-foreign-policy-fiascos-joe-biden-can-fix-on-day-one/')">
+    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/download-no-return-to-blair-wars-a-reply-to-open-labour-pamphlet/')">
         <div class="slider__content">
-            <pre class="slider__content_title">10 ВНЕШНЯЯ ПОЛИТИКА FIASCOS ДЖО БИДЕН МОЖЕТ ИСПРАВИТЬ В ПЕРВЫЙ ДЕНЬ</pre>
+            <pre class="slider__content_title">СКАЧАТЬ: NO RETURN TO BLAIR WARS - ОТВЕТ НА ОТКРЫТУЮ ТРУДОВУЮ БУКЛЕТУ</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1545')">
+    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1553')">
         <div class="slider__content">
-            <pre class="slider__content_title">ЮНЫЕ МИРОТВОРЦЫ НА СЛУЖБЕ МИРА!</pre>
+            <pre class="slider__content_title">ОТКРЫТИЕ ФОТОВЫСТАВКИ «ЗИМНИЕ ИСТОРИИ-3» НА ТВЕРСКОМ БУЛЬВАРЕ</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/boris-johnson-and-the-magic-money-tree-for-war/')">
+    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/chris-nineham-on-tory-refusal-to-end-arms-sales-to-saudi-arabia/')">
         <div class="slider__content">
-            <pre class="slider__content_title">БОРИС ДЖОНСОН И ВОЛШЕБНОЕ ДЕНЕЖНОЕ ДЕРЕВО ДЛЯ ВОЙНЫ</pre>
+            <pre class="slider__content_title">Крис Найнхэм об отказе тори прекратить продажи оружия САУДОВСКОЙ АРАВИИ</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/edinaya-rossiya-provela-intellektualnye-igry-roskviz-v-30-regionah')">
+    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/vladimir-putin-odobril-iniciativy-edinoj-rossii-po-resheniyu-voprosov-zanyatosti-naseleniya-i-zashite-garantirovannogo-minimalnogo-dohoda')">
         <div class="slider__content">
-            <pre class="slider__content_title">«Единая Россия» провела интеллектуальные игры «РосКвиз» в 30 регионах</pre>
+            <pre class="slider__content_title">Владимир Путин одобрил инициативы «Единой России» по решению вопросов занятости населения и защите гарантированного минимального дохода</pre>
         </div>
     </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/pavel-krasheninnikov-prioritet-konstitucii-rf-nad-mezhdunarodnymi-dogovorami-v-semejnom-prave-ureguliruet-bolshuyu-chast-problem-v-etoj-sfere')">
+    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/sovet-federacii-odobril-zakon-o-zaprete-vysazhivat-iz-transporta-detej-bezbiletnikov')">
         <div class="slider__content">
-            <pre class="slider__content_title">Павел Крашенинников: Приоритет Конституции РФ над международными договорами в семейном праве урегулирует большую часть проблем в этой сфере</pre>
+            <pre class="slider__content_title">Совет Федерации одобрил закон о запрете высаживать из транспорта детей-безбилетников</pre>
         </div>
     </div>
 </div>
@@ -345,21 +364,21 @@
                 <div id="rightcontent" class=" d-flex flex-column my-flex-item">
                     <div class="text-center-no text-center"><span>Новости</span><a href="#" id="closeR" class="closeNews"><img style="height: 100%" src="img/close.png"></a></div>
                     <div id="carouselhAuto">
-        <div onclick="window.open('https://news.un.org/ru/story/2020/11/1391292')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
-        ФАО: Запасы пресной воды на планете сократились за последние 20 лет более чем на 20 процентов</a></span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/11/1391202')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
-        Каждые 100 секунд ВИЧ поражает одного ребенка или подростка</span></a></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/11/1391182')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
-        Пять вещей, которые нужно знать об усилиях, направленных на уничтожение кассетных бомб</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/11/1391162')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
-        В ООН потребовали от Ирана отменить казнь иранско-шведского ученого Джалали</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/11/1391172')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
-        Эксперты ООН: Армения, Азербайджан, Беларусь, Грузия, Молдова и Украина должны активнее развивать свой инновационный потенциал</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/08/1384742')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
-            В ООН призывают спасти 400  мигрантов, дрейфующих в Средиземном море </span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2020/08/1384712')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
-            Пандемия COVID-19 - не повод  приостанавливать расследования насильственных исчезновений</span></div>
-                </div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396912')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
+        Глава ООН заявил о необходимости разработки Глобального плана вакцинации</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396952')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
+        Почти 60 процентов всех жителей Сирии оказались на грани голода</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396942')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
+        Эксперты предупреждают о высоком риске распространения вируса SARS-CoV-2 на зверофермах Европы</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396932')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
+        Председатель Генассамблеи ООН призвал пресекать коррупционные схемы при распределении вакцин</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396792')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
+        Крупнейшие авиакомпании мира помогут ЮНИСЕФ с доставкой вакцин от COVID-19</span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396862')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
+            В ООН призвали наказать виновных в ракетном обстреле административного центра иракского Курдистана </span></div>
+    <div onclick="window.open('https://news.un.org/ru/story/2021/01/1395462')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
+            Всемирная неделя межконфессиональных отношений: наша сила в разнообразии</span></div>
+</div>
             </div>
             </div>
         </div>

@@ -34,6 +34,19 @@
     <script src="../leaflet/leaflet-src.js"></script>
     <script src="../js/time.js"></script>
     <script>
+        timeend= new Date(2021, 2, 12, 16, 00);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +":"+ thour+":"+tmin+":"+tsec+"";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
+    <script>
         $(document).ready(function() {
             $('#carouselhAuto').jsCarousel({
                 onthumbnailclick: function(src) { /* alert(src);*/  },  //функция при нажатии на картинку
@@ -48,7 +61,7 @@
     </script>
     <title>Title</title>
 </head>
-<body id="L3">
+<body onload="time()" id="L3">
 <div id="mobile">
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
@@ -91,7 +104,7 @@
                     <a class="nav-link" href="map.html">Maps</a>
                 </li>
                 <li class="nav-item p-2">
-                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="events.html">Activity</a>
                 </li>
                 <li class="nav-item p-2">
                     <a class="nav-link" href="http://thepeacewords.world/EN/almanahphone.html">Almanac</a>
@@ -121,7 +134,7 @@
                     <a class="nav-link" href="http://thepeacewords.world/slovarEN.html">Vocabulary</a>
                 </li>
                 <li class="nav-item p-2">
-                    <a onclick="alert('Section in development!')" class="nav-link" href="#">Chronology</a>
+                    <a  class="nav-link" href="http://thepeacewords.world/HronoEN.html">Chronology</a>
                 </li>
             </ul>
         </nav>
@@ -194,6 +207,11 @@
             <div class="name d-flex flex-column">
                 <span>International free internet platform</span>
                 <span>The Peace</span>
+            </div>
+            <div>
+                <a style="color: red;" href="event.html">THE ROUND TABLE<br>"THE STRUGGLE FOR PEACE-HISTORY LESSONS"</a>
+                <br>
+
             </div>
             <div id="doc_time1" class="data">
                 <span>Дата</span>
@@ -300,12 +318,23 @@
                 <div id="rightcontent" class=" d-flex flex-column my-flex-item">
                     <div class="text-center-no text-center"><span>News</span><a href="#" id="closeR" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
                     <div id="carouselhAuto">
-                        <div onclick="window.open('https://news.un.org/en/story/2020/02/1057681')"><img src="../img/us1.jpg" /><br /><span class="thumbnail-text">Amid ‘devastating scale’ of suffering in Syria’s north-west, UN Security Council urged to find political way forward</span></a></div>
-                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070312')"><img src="../img/us2.jpg" /><br /><span class="thumbnail-text">Virtual Concert unites Pacific with the world in battling COVID-19</a></span></div>
-                        <div onclick="window.open('https://news.un.org/en/story/2020/02/1057671')"><img src="../img/us3.jpg" /><br /><span class="thumbnail-text">‘Not a single country’ does enough to help children flourish, say health experts</span></div>
-                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070282')"><img src="../img/us4.jpg" /><br /><span class="thumbnail-text">Real Life Heroes: delivering aid under fire</span></div>
-                        <div onclick="window.open('https://news.un.org/en/story/2020/01/1055452')"><img src="../img/us5.jpg" /><br /><span class="thumbnail-text">Tackling femicide in Argentina: a UN Resident Coordinator blog</span></div>
-                        <div onclick="window.open('https://news.un.org/en/story/2020/08/1070292')"><img src="../img/us6.jpg" /><br /><span class="thumbnail-text">Real Life Heroes: building trust, and saving lives</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1083062')"><img src="../img/us1.jpg" /><br />
+                        <span class="thumbnail-text">Climate change is a ‘global emergency’, biggest ever opinion poll finds</span></a></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1083022')"><img src="../img/us2.jpg" /><br />
+                        <span class="thumbnail-text">
+                        UN health agency panel issues key guidance on second COVID vaccine doses</a></span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1082982')"><img src="../img/us3.jpg" /><br />
+                        <span class="thumbnail-text">
+                        UN ready to support Palestinian elections, new envoy tells Security Council</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1083032')"><img src="../img/us4.jpg" /><br />
+                        <span class="thumbnail-text">
+                        Climate litigation spikes, giving courts an ‘essential role’ in addressing climate crisis</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1082972')"><img src="../img/us5.jpg" /><br />
+                        <span class="thumbnail-text">
+                        Mozambique: UN responds as thousands are caught in the wake of devastating Cyclone Eloise</span></div>
+                        <div onclick="window.open('https://news.un.org/en/story/2021/01/1082992')"><img src="../img/us6.jpg" /><br />
+                        <span class="thumbnail-text">
+                        UN rights experts urge Israel to respect international obligations</span></div>
                     </div>
                 </div>
             </div>

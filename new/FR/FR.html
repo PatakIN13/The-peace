@@ -33,6 +33,19 @@
     <link rel="stylesheet" href="../slide/css/right-nav-style.css">
     <script src="../js/time.js"></script>
     <script>
+        timeend= new Date(2021, 2, 12, 16, 00);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +":"+ thour+":"+tmin+":"+tsec+"";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
+    <script>
         $(document).ready(function() {
             $('#carouselhAuto').jsCarousel({
                 onthumbnailclick: function(src) { /* alert(src);*/  },  //функция при нажатии на картинку
@@ -47,7 +60,7 @@
     </script>
     <title>Title</title>
 </head>
-<body id="L2">
+<body onload="time()" id="L2">
 <div id="mobile">
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
@@ -90,7 +103,7 @@
                     <a onclick="alert('Section en développement!')" class="nav-link" href="#">Les cartes</a>
                 </li>
                 <li class="nav-item p-2">
-                    <a onclick="alert('Section en développement!')" class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="events.html">Activité</a>
                 </li>
                 <li class="nav-item p-2">
                     <a class="nav-link" href="http://thepeacewords.world/FR/almanahphone.html">Almanach</a>
@@ -135,13 +148,14 @@
                     <a href="../index.html"><img id="langue_rusm" class="d-none" src="../img/langue/russia_640.png"></a>
                     <a href="../EN.html"><img id="langue_enm" class="d-none" src="../img/langue/united_kingdom_640.png"></a>
                 </div>
-                <div class="main-circle text-center-no text-center align-content-center" id="app1">
-                    <div class="clock">
-                        <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>
-                        <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>
-                        <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>
-                    </div>
-                </div>
+<!--                <div class="main-circle text-center-no text-center align-content-center" id="app1">-->
+<!--                    <div class="clock">-->
+<!--                        <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>-->
+<!--                        <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>-->
+<!--                        <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <iframe width="640" height="360" src="https://play.boomstream.com/6UWW7EzA" frameborder="0" scrolling="no" allowfullscreen></iframe>
             </div>
             <div id="leftfooterm" class=" d-flex flex-column my-flex-item lf">
                 <div class="text-center-no-phone text-center "><span>Topique</span><a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
@@ -213,6 +227,11 @@
                 <span>Plateforme Internet gratuite internationale</span>
                 <span>La Paix</span>
             </div>
+            <div>
+                <a style="color: red;" href="event.html">LA TABLE RONDE <br> "LA LUTTE POUR LES LEÇONS DE L'HISTOIRE DE LA PAIX"</a>
+                <br>
+
+            </div>
             <div id="doc_time1" class="data">
                 <span>Дата</span>
             </div>
@@ -240,29 +259,30 @@
                             document.getElementById('langue_enm').classList.add("d-block");
                         }
                     </script>
-                    <div class="main-circle text-center-no text-center align-content-center" id="app">
-                            <div class="clock">
-                                <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>
-                                <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>
-                                <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>
-                            </div>
+<!--                    <div class="main-circle text-center-no text-center align-content-center" id="app">-->
+<!--                            <div class="clock">-->
+<!--                                <div class="hour" v-bind:style="{transform: 'rotate(' + hourDeg + ')'}"> </div>-->
+<!--                                <div class="min" v-bind:style="{transform: 'rotate(' + minsDeg + ')'}"></div>-->
+<!--                                <div class="sec" v-bind:style="{transform: 'rotate(' + secsDeg + ')'}"></div>-->
+<!--                            </div>-->
 
-                        <a href="Arhiv.html" class="backa circles right  deg1"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Arhiv.png" alt="Archive"><span>Archive</span></div></a>
-                            <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg2"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Biblio.png" alt="La bibliothèque"><span>La bibliothèque</span></div></a>
-                        <a href="http://forpeace.world/FR/" class="backa circles left deg3"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Konkurs.png" alt = "Concours"><span>Concours</span></div></a>
-                            <a href="pd.html" class="backa circles left deg4"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/PD.png" alt = "Photo-Diplomacy"><span>Photo-Diplomacy</span></div></a>
-                        <a href="#" onclick="alert('Section en développement!')" class="backa circles left deg5"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Blog.png" alt = "Blogs"><span>Blogs</span></div></a>
-                        <a href="http://thepeacewords.world/FR/almanah.html" class="backa circles right deg6"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Almanah.png" alt = "Almanach"><span>Almanach</span></div></a>
-                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg7"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Slovar.png" alt = "Vocabulaire"><span>Vocabulaire</span></div></a>
-                        <a href="http://thepeacewords.world/FR/quotes.html" class="backa circles right deg8"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Citat.png" alt = "Citations"><span>Citations</span></div></a>
-                        <a href="http://thepeacewords.world/FR/Hrono.html" class="backa circles right deg9"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Hrono.png" alt = "Chronologie"><span>Chronologie</span></div></a>
-                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg10"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Maps.png" alt = "Les cartes"><span>Les cartes</span></div></a>
-                        <a href="nobile.html" class="backa circles right deg11"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Nobile.png" alt = "Lauréats du prix Nobel"><span>Lauréats du prix Nobel</span></div></a>
-                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg12"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Fondworld.png" alt = "Les fonds"><span>Les fonds</span></div></a>
-                        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script>
-                        <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js'></script>
-                        <script  src="../clock/js/index.js"></script>
-                    </div>
+<!--                        <a href="Arhiv.html" class="backa circles right  deg1"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Arhiv.png" alt="Archive"><span>Archive</span></div></a>-->
+<!--                            <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg2"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Biblio.png" alt="La bibliothèque"><span>La bibliothèque</span></div></a>-->
+<!--                        <a href="http://forpeace.world/FR/" class="backa circles left deg3"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Konkurs.png" alt = "Concours"><span>Concours</span></div></a>-->
+<!--                            <a href="pd.html" class="backa circles left deg4"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/PD.png" alt = "Photo-Diplomacy"><span>Photo-Diplomacy</span></div></a>-->
+<!--                        <a href="events.html" class="backa circles left deg5"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Blog.png" alt = "Blogs"><span>Activité</span></div></a>-->
+<!--                        <a href="http://thepeacewords.world/FR/almanah.html" class="backa circles right deg6"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Almanah.png" alt = "Almanach"><span>Almanach</span></div></a>-->
+<!--                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg7"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Slovar.png" alt = "Vocabulaire"><span>Vocabulaire</span></div></a>-->
+<!--                        <a href="http://thepeacewords.world/FR/quotes.html" class="backa circles right deg8"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Citat.png" alt = "Citations"><span>Citations</span></div></a>-->
+<!--                        <a href="http://thepeacewords.world/FR/Hrono.html" class="backa circles right deg9"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Hrono.png" alt = "Chronologie"><span>Chronologie</span></div></a>-->
+<!--                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg10"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Maps.png" alt = "Les cartes"><span>Les cartes</span></div></a>-->
+<!--                        <a href="nobile.html" class="backa circles right deg11"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Nobile.png" alt = "Lauréats du prix Nobel"><span>Lauréats du prix Nobel</span></div></a>-->
+<!--                        <a href="#" onclick="alert('Section en développement!')" class="backa circles right deg12"><div class="buttonsrc d-flex justify-content-center flex-column align-items-center"><img src="../img/icon/Fondworld.png" alt = "Les fonds"><span>Les fonds</span></div></a>-->
+<!--                        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script>-->
+<!--                        <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js'></script>-->
+<!--                        <script  src="../clock/js/index.js"></script>-->
+<!--                    </div>-->
+                    <iframe width="640" height="360" src="https://play.boomstream.com/6UWW7EzA" frameborder="0" scrolling="no" allowfullscreen></iframe>
                 </div>
                 <div id="leftfooter" class=" d-flex flex-column my-flex-item lf">
                     <div class="text-center-no text-center"><span>Topique</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>

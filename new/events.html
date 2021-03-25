@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate"><!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(61489846, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+        ym(61489846, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61489846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="roboto/roboto.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -27,14 +27,8 @@
     <script src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="slide/css/style.css">
     <link rel="stylesheet" href="slide/css/right-nav-style.css">
-    <link rel="stylesheet" href="leaflet/leaflet.css">
-    <script type="text/javascript"
-            src="http://api-maps.yandex.ru/2.1/?lang=en-US"></script>
-    <script type="text/javascript" src="umd/index.js"></script>
-    <!--    <script src="leaflet/leaflet.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script rel="stylesheet" src="Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
-    <!--    <script src="leaflet/leaflet-src.js"></script>-->
     <script src="js/time.js"></script>
     <script>
         timeend= new Date(2021, 2, 12, 16, 00);
@@ -49,11 +43,6 @@
             window.setTimeout("time()",1000);
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-    <script src="timeline.js"></script>
-    <script src="js/leaflet.timeline.js"></script>
-    <script src="https://unpkg.com/osme"></script>
     <script>
         $(document).ready(function() {
             $('#carouselhAuto').jsCarousel({
@@ -67,11 +56,6 @@
             });
         });
     </script>
-    <style>
-        .leaflet-bottom{
-            width: 100%;
-        }
-    </style>
     <title>Title</title>
 </head>
 <body onload="time()" id="L3">
@@ -114,6 +98,9 @@
         -->
             <ul class="navbar-nav mr-auto d-flex flex-column flex-wrap">
                 <li class="nav-item p-2">
+                    <a class="nav-link" href="map.html">Карты</a>
+                </li>
+                <li class="nav-item p-2">
                     <a class="nav-link" href="events.html">Мероприятия</a>
                 </li>
                 <li class="nav-item p-2">
@@ -136,6 +123,12 @@
                 </li>
                 <li class="nav-item p-2">
                     <a class="nav-link" href="aktual.html">Актуальное</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="nobile.html">Нобелевские лауреаты</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="fondworld.html">Фонды мира</a>
                 </li>
                 <li class="nav-item p-2">
                     <a class="nav-link" href="http://thepeacewords.world/quotes.html">Цитаты</a>
@@ -162,14 +155,37 @@
             <div id="leftcontent" class=" d-flex flex-column my-flex-item">
                 <div class="d-flex flex-row justify-content-center align-items-center" id="pd-up">
                     <span class="name">
-                        Расширение НАТО
+                        Мероприятия
                     </span>
                 </div>
-                <div class="overflow-auto" style="height: 100%">
-                    <div class="arhivAll p-3 d-flex flex-row flex-wrap justify-content-center align-items-center text-center " style="height: 100%;">
 
+                <div id="blogs" class="overflow-auto">
+                    <div id="blogsmain" class="d-flex flex-column p-2">
+                        <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                            <div class="data text-center d-flex flex-column justify-content-center align-items-center">
+                                <span>12</span><span>Марта</span><span>2021</span>
+                            </div>
+                            <div class="zaguser d-flex flex-column p-2 ">
+                                <div class="zag"> <h4>Круглый стол "БОРЬБА ЗА МИР – УРОКИ ИСТОРИИ"</h4></div>
+                                <div class="user"><span></span></div>
+                            </div>
+                            <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                <div class="userimg">
+                                    <img src="img/logoevents.jpg">
+                                </div>
+<!--                                <div class="reg d-flex flex-row align-items-center">-->
+<!--                                    <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+<!--                                        <path fill="currentColor"-->
+<!--                                              d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+<!--                                        </path>-->
+<!--                                    </svg>-->
+<!--                                    <span class="slider__content_views">860</span>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -197,6 +213,7 @@
                 <a href="../index.html" class="backa p-2"><div class="back">
                     <span>На Главную</span>
                 </div>
+                </a>
                 </a>
 
             </div>
@@ -237,137 +254,99 @@
                         }
                     </script>
                     <div class="d-flex flex-row align-items-center" id="pd-up">
-                        <a href="./map.html" class="backa"><div class="back d-flex flex-row align-items-center">
+                        <a href="./index.html" class="backa"><div class="back d-flex flex-row align-items-center">
                             <div class="img-pd"><img src="img/go-back.png" class="img-fluid"></div>
                             <span>Назад</span>
                         </div>
                         </a>
                         <span class="name">
-                            Расширение НАТО
+                           Мероприятия
                         </span>
                     </div>
-                    <div class="arhivAll d-flex flex-row justify-content-center text-center " style="height: 100%">
-                        <div id="map" style="width: 100%; height: 100%;"></div>
-                        <script type='text/javascript'>
-                            var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-                            var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">' +
-                                'OpenStreetMap</a> contributors';
-                            var osm = L.tileLayer(osmUrl, {
-                                maxZoom: 18,
-                                attribution: osmAttrib,
-                                noWrap: true
-                            });
-                            var map = L.map('map', {
-                                layers: [osm],
-                                center: new L.LatLng(53.525535, -26.906790),
-                                zoom: 3,
-                                maxBounds: [[90,-180], [-90, 180]]
-                            });
-
-                            function updateList(timeline){
-                                var displayed = timeline.getLayers();
-                                var list = document.getElementById('displayed-list');
-                                list.innerHTML = "";
-                                displayed.forEach(function(quake){
-                                    var li = document.createElement('li');
-                                    li.innerHTML = quake.feature.properties.title;
-                                    list.appendChild(li);
-                                });
-                            }
-
-                            function eqfeed_callback(data){
-                                var getInterval = function(quake) {
-                                    // earthquake data only has a time, so we'll use that as a "start"
-                                    // and the "end" will be that + some value based on magnitude
-                                    // 18000000 = 30 minutes, so a quake of magnitude 5 would show on the
-                                    // map for 150 minutes or 2.5 hours
-                                    return {
-                                        start: quake.properties.time,
-                                        end:   quake.properties.end + quake.properties.updated
-                                    };
-                                };
-                                var timelineControl = L.timelineSliderControl({
-                                    formatOutput: function(date){
-                                        return moment(date).format("YYYY-MM-DD HH:MM");
-                                    }
-                                });
-                                var timeline = L.timeline(data, {
-                                    getInterval: getInterval,
-                                    pointToLayer: function(data, latlng){
-                                        return L.marker(latlng, {
-                                        }).bindPopup("<strong>"+data.properties.place+ " "+ moment(data.properties.time).format("YYYY-MM-DD") +"</strong>");
-                                    }
-                                });
-                                timelineControl.addTo(map);
-                                timelineControl.addTimelines(timeline);
-                                timeline.addTo(map);
-                                // timeline.on('change', function(e){
-                                //     updateList(e.target);
-                                // });
-                                // updateList(timeline);
-                            }
-                        </script>
-                        <script>
-                            eqfeed_callback(m);
-                        </script>
+                    <div id="blogs" class="overflow-auto">
+                        <div id="blogsmain" class="d-flex flex-column p-2">
+                            <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                                <div class="data text-center">
+                                    <span>12<br>Марта<br>2021</span>
+                                </div>
+                                <div class="zaguser d-flex flex-column p-2 ">
+                                    <div class="zag"> <h4>Круглый стол "БОРЬБА ЗА МИР – УРОКИ ИСТОРИИ"</h4></div>
+                                    <div class="user"><span></span></div>
+                                </div>
+                                <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                    <div class="userimg">
+                                        <img src="img/logoevents.jpg">
+                                    </div>
+<!--                                    <div class="reg d-flex flex-row align-items-center">-->
+<!--                                        <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+<!--                                            <path fill="currentColor"-->
+<!--                                                  d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+<!--                                            </path>-->
+<!--                                        </svg>-->
+<!--                                        <span class="slider__content_views">860</span>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                 <div id="leftfooter" class=" d-flex flex-column my-flex-item">
-                    <div class="text-center-no text-center"><span>Актуальное</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="img/close.png"></a></div>
+                    <div class="text-center-no text-center"><span>Актуальное</span><a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="img/close.png"></a></div>
                     <div class="slider">
-     <div class="slider__wrapper">
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1556')">
-        <div class="slider__content">
+                        <div class="slider__wrapper">
+                            <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1556')">
+                                <div class="slider__content">
             <pre class="slider__content_title">РОССИЙСКИЙ ФОНД МИРА ПОЗДРАВИЛ С НОВЫМ ГОДОМ ПОДОПЕЧНЫХ КОМИССИИ ПО ДЕЛАМ НЕСОВЕРШЕННОЛЕТНИХ Г.КРАСНОАРМЕЙСКА
 </pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/andrej-turchak-prizval-vseh-neravnodushnyh-vozlozhit-cvety-k-voinskim-memorialam-23-fevralya')">
-        <div class="slider__content">
-            <pre class="slider__content_title">Андрей Турчак призвал всех неравнодушных возложить цветы к воинским мемориалам 23 февраля</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/dominic-raabs-call-for-a-global-ceasefire-is-undiluted-hypocrisy/')">
-        <div class="slider__content">
-            <pre class="slider__content_title">ПРИЗЫВ ДОМИНИЧЕСКОГО РААБА К ГЛОБАЛЬНОМУ ПРЕКРАЩЕНИЮ НЕРАЗБАВЛЕННОЙ ГИПОКРИЗИИ</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1555')">
-        <div class="slider__content">
-            <pre class="slider__content_title">ПРОЕКТ «А ЖИЛИ МЫ ВМЕСТЕ СЕМЬЕЮ ЕДИНОЙ»</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/gosduma-prinyala-zakon-edinoj-rossii-stimuliruyushij-razvitie-vnutrennego-turizma')">
-        <div class="slider__content">
-            <pre class="slider__content_title">Госдума приняла закон «Единой России», стимулирующий развитие внутреннего туризма</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/download-no-return-to-blair-wars-a-reply-to-open-labour-pamphlet/')">
-        <div class="slider__content">
-            <pre class="slider__content_title">СКАЧАТЬ: NO RETURN TO BLAIR WARS - ОТВЕТ НА ОТКРЫТУЮ ТРУДОВУЮ БУКЛЕТУ</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1553')">
-        <div class="slider__content">
-            <pre class="slider__content_title">ОТКРЫТИЕ ФОТОВЫСТАВКИ «ЗИМНИЕ ИСТОРИИ-3» НА ТВЕРСКОМ БУЛЬВАРЕ</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/chris-nineham-on-tory-refusal-to-end-arms-sales-to-saudi-arabia/')">
-        <div class="slider__content">
-            <pre class="slider__content_title">Крис Найнхэм об отказе тори прекратить продажи оружия САУДОВСКОЙ АРАВИИ</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/vladimir-putin-odobril-iniciativy-edinoj-rossii-po-resheniyu-voprosov-zanyatosti-naseleniya-i-zashite-garantirovannogo-minimalnogo-dohoda')">
-        <div class="slider__content">
-            <pre class="slider__content_title">Владимир Путин одобрил инициативы «Единой России» по решению вопросов занятости населения и защите гарантированного минимального дохода</pre>
-        </div>
-    </div>
-    <div class="slider__item" onclick="window.open('https://er.ru/activity/news/sovet-federacii-odobril-zakon-o-zaprete-vysazhivat-iz-transporta-detej-bezbiletnikov')">
-        <div class="slider__content">
-            <pre class="slider__content_title">Совет Федерации одобрил закон о запрете высаживать из транспорта детей-безбилетников</pre>
-        </div>
-    </div>
-</div>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://er.ru/activity/news/andrej-turchak-prizval-vseh-neravnodushnyh-vozlozhit-cvety-k-voinskim-memorialam-23-fevralya')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Андрей Турчак призвал всех неравнодушных возложить цветы к воинским мемориалам 23 февраля</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/dominic-raabs-call-for-a-global-ceasefire-is-undiluted-hypocrisy/')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">ПРИЗЫВ ДОМИНИЧЕСКОГО РААБА К ГЛОБАЛЬНОМУ ПРЕКРАЩЕНИЮ НЕРАЗБАВЛЕННОЙ ГИПОКРИЗИИ</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1555')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">ПРОЕКТ «А ЖИЛИ МЫ ВМЕСТЕ СЕМЬЕЮ ЕДИНОЙ»</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://er.ru/activity/news/gosduma-prinyala-zakon-edinoj-rossii-stimuliruyushij-razvitie-vnutrennego-turizma')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Госдума приняла закон «Единой России», стимулирующий развитие внутреннего туризма</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/download-no-return-to-blair-wars-a-reply-to-open-labour-pamphlet/')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">СКАЧАТЬ: NO RETURN TO BLAIR WARS - ОТВЕТ НА ОТКРЫТУЮ ТРУДОВУЮ БУКЛЕТУ</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('http://peacefond.ru/news/?id=1553')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">ОТКРЫТИЕ ФОТОВЫСТАВКИ «ЗИМНИЕ ИСТОРИИ-3» НА ТВЕРСКОМ БУЛЬВАРЕ</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://www.stopwar.org.uk/article/chris-nineham-on-tory-refusal-to-end-arms-sales-to-saudi-arabia/')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Крис Найнхэм об отказе тори прекратить продажи оружия САУДОВСКОЙ АРАВИИ</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://er.ru/activity/news/vladimir-putin-odobril-iniciativy-edinoj-rossii-po-resheniyu-voprosov-zanyatosti-naseleniya-i-zashite-garantirovannogo-minimalnogo-dohoda')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Владимир Путин одобрил инициативы «Единой России» по решению вопросов занятости населения и защите гарантированного минимального дохода</pre>
+                                </div>
+                            </div>
+                            <div class="slider__item" onclick="window.open('https://er.ru/activity/news/sovet-federacii-odobril-zakon-o-zaprete-vysazhivat-iz-transporta-detej-bezbiletnikov')">
+                                <div class="slider__content">
+                                    <pre class="slider__content_title">Совет Федерации одобрил закон о запрете высаживать из транспорта детей-безбилетников</pre>
+                                </div>
+                            </div>
+                        </div>
                         <script language="JavaScript" type="text/javascript" src="./js/textedit.js"></script>
                         <a class="slider__control slider__control_left" href="#" role="button"></a>
                         <a class="slider__control slider__control_right" href="#" role="button"></a>
@@ -379,22 +358,22 @@
                 <div id="rightcontent" class=" d-flex flex-column my-flex-item">
                     <div class="text-center-no text-center"><span>Новости</span><a href="#" id="closeR" class="closeNews"><img style="height: 100%" src="img/close.png"></a></div>
                     <div id="carouselhAuto">
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396912')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396912')"><img src="./img/img_6.jpg" /><br /><span class="thumbnail-text">
         Глава ООН заявил о необходимости разработки Глобального плана вакцинации</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396952')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396952')"><img src="./img/img_11.jpg" /><br /><span class="thumbnail-text">
         Почти 60 процентов всех жителей Сирии оказались на грани голода</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396942')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396942')"><img src="./img/img_12.jpg" /><br /><span class="thumbnail-text">
         Эксперты предупреждают о высоком риске распространения вируса SARS-CoV-2 на зверофермах Европы</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396932')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396932')"><img src="./img/img_13.jpg" /><br /><span class="thumbnail-text">
         Председатель Генассамблеи ООН призвал пресекать коррупционные схемы при распределении вакцин</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396792')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396792')"><img src="./img/img_14.jpg" /><br /><span class="thumbnail-text">
         Крупнейшие авиакомпании мира помогут ЮНИСЕФ с доставкой вакцин от COVID-19</span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396862')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/02/1396862')"><img src="./img/img_15.jpg" /><br /><span class="thumbnail-text">
             В ООН призвали наказать виновных в ракетном обстреле административного центра иракского Курдистана </span></div>
-    <div onclick="window.open('https://news.un.org/ru/story/2021/01/1395462')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
+                        <div onclick="window.open('https://news.un.org/ru/story/2021/01/1395462')"><img src="./img/img_16.jpg" /><br /><span class="thumbnail-text">
             Всемирная неделя межконфессиональных отношений: наша сила в разнообразии</span></div>
-</div>
-            </div>
+                    </div>
+                </div>
             </div>
         </div>
 

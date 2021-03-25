@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate"><!-- Yandex.Metrika counter -->
@@ -21,14 +21,15 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Slider/css/style.css">
-    <link rel="stylesheet" href="../css/StylePD.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="../css/simple-sidebar.css" rel="stylesheet">
     <script src="../js/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" href="../slide/css/style.css">
-    <link rel="stylesheet" href="../slide/css/right-nav-style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script rel="stylesheet" src="../Slider/js/jsCarousel-2.0.0.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../clock/css/style.css">
+    <link rel="stylesheet" href="../slide/css/style.css">
+    <link rel="stylesheet" href="../slide/css/right-nav-style.css">
     <script src="../js/time.js"></script>
     <script>
         timeend= new Date(2021, 2, 12, 16, 00);
@@ -63,7 +64,7 @@
     <div id="all" class="d-flex flex-column my-flex-container">
         <div id="header" class="d-flex flex-row align-items-center text-center-no text-center justify-content-around my-flex-item">
             <a href="../../index.html" class="backa"><div class="back">
-                <span>In the main</span>
+                <span>Main page</span>
             </div>
             </a>
             <div class="name d-flex flex-column">
@@ -136,44 +137,45 @@
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle" style="background-image: none" onclick></label>
-        <div id="allcontent" class="d-flex flex-column my-flex-container" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: auto 100%;background-position: 50% 0%">
+        <div id="allcontent" class="d-flex flex-column my-flex-container">
             <div id="leftcontent" class=" d-flex flex-column my-flex-item">
                 <div class="d-flex flex-row justify-content-center align-items-center" id="pd-up">
                     <span class="name">
-                        Archive
+                        Activity
                     </span>
                 </div>
-                <div class="overflow-auto">
-                    <div class="arhivAll p-3 d-flex flex-row flex-wrap justify-content-center align-items-center text-center ">
-                        <div class="mapOneA">
-                            <div class="astule">
-                                <a href="../files/Helsinki_concluding_act_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Helsinki Final Act</u></i></span></div>
-                                </a>
+
+                <div id="blogs" class="overflow-auto">
+                    <div id="blogsmain" class="d-flex flex-column p-2">
+                        <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                            <div class="data text-center d-flex flex-column justify-content-center align-items-center">
+                                <span>12</span><span>March</span><span>2021</span>
                             </div>
-                        </div>
-                        <div class="mapOneA">
-                            <div class="astule">
-                                <a href="../files/Paris_charter_for_new_Europe_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Charter of Paris for a new Europe</u></i></span></div>
-                                </a>
+                            <div class="zaguser d-flex flex-column p-2 ">
+                                <div class="zag"> <h4>THE ROUND TABLE "THE STRUGGLE FOR PEACE-HISTORY LESSONS"</h4></div>
+                                <div class="user"><span></span></div>
                             </div>
-                        </div>
-                        <div class="mapOneA">
-                            <div class="astule">
-                                <a href="../files/Astana_Jubilee_Declaration_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Astana Anniversary Declaration</u></i></span></div>
-                                </a>
+                            <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                <div class="userimg">
+                                    <img src="../img/logoevents.jpg">
+                                </div>
+                                <!--                                <div class="reg d-flex flex-row align-items-center">-->
+                                <!--                                    <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+                                <!--                                        <path fill="currentColor"-->
+                                <!--                                              d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+                                <!--                                        </path>-->
+                                <!--                                    </svg>-->
+                                <!--                                    <span class="slider__content_views">860</span>-->
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <div id="decktop">
@@ -205,7 +207,7 @@
         </div>
         <div id="allcontent" class="d-flex flex-row my-flex-container">
             <div id="left" class="d-flex flex-column  my-flex-container">
-                <div id="leftcontent" class="d-flex flex-column my-flex-item" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 246, 246, 0.8)),  url(../img/fonarhiv.jpeg);background-repeat: no-repeat;background-size: 100% 100%;">
+                <div id="leftcontent" class="d-flex flex-column my-flex-item">
                     <div class="langue">
                         <a href="#"><img id="langue_en" src="../img/langue/united_kingdom_640.png" onclick="langueclick()"></a>
                         <a href="../index.html"><img id="langue_rus"  class="d-none" src="../img/langue/russia_640.png"></a>
@@ -224,98 +226,98 @@
                         }
                     </script>
                     <div class="d-flex flex-row align-items-center" id="pd-up">
-                        <a href="./Arhiv.html" class="backa"><div class="back d-flex flex-row align-items-center">
+                        <a href="./EN.html" class="backa"><div class="back d-flex flex-row align-items-center">
                             <div class="img-pd"><img src="../img/go-back.png" class="img-fluid"></div>
                             <span>Return to</span>
                         </div>
                         </a>
                         <span class="name">
-                            Archive
+                           Activity
                         </span>
                     </div>
-                    <div class="arhivAll d-flex flex-row justify-content-center text-center ">
-                        <div class="arhivOne">
-                            <div class="astule">
-                                <a href="../files/Helsinki_concluding_act_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Helsinki Final Act</u></i></span></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="arhivOne">
-                            <div class="astule">
-                                <a href="../files/Paris_charter_for_new_Europe_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Charter of Paris for a new Europe</u></i></span></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="arhivOne">
-                            <div class="astule">
-                                <a href="../files/Astana_Jubilee_Declaration_Eng.pdf">
-                                    <div class="arhiveImg"><img src="../img/doc.png"></div>
-                                    <div class="arhiveText"><span class="text-break"><i><u>Astana Anniversary Declaration</u></i></span></div>
-                                </a>
+                    <div id="blogs" class="overflow-auto">
+                        <div id="blogsmain" class="d-flex flex-column p-2">
+                            <div class="blog d-flex flex-row justify-content-around align-items-center" id="blog_activ" onclick="window.open('./event.html')">
+                                <div class="data text-center">
+                                    <span>12<br>March<br>2021</span>
+                                </div>
+                                <div class="zaguser d-flex flex-column p-2 ">
+                                    <div class="zag"> <h4>THE ROUND TABLE "THE STRUGGLE FOR PEACE-HISTORY LESSONS"</h4></div>
+                                    <div class="user"><span></span></div>
+                                </div>
+                                <div class="userimgreg d-flex flex-row justify-content-around align-content-center p-2">
+                                    <div class="userimg">
+                                        <img src="../img/logoevents.jpg">
+                                    </div>
+                                    <!--                                    <div class="reg d-flex flex-row align-items-center">-->
+                                    <!--                                        <svg class="slider__content_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">-->
+                                    <!--                                            <path fill="currentColor"-->
+                                    <!--                                                  d="M10 5C6.947 5 4.16 6.747 2.12 9.61a.726.726 0 0 0 0 .799C4.16 13.253 6.947 15 10 15s5.84-1.747 7.88-4.61a.726.726 0 0 0 0-.799C15.84 6.747 13.053 5 10 5zm.213 8.513c-2.023.13-3.71-1.617-3.585-3.755.106-1.747 1.473-3.178 3.141-3.29 2.024-.13 3.71 1.618 3.585 3.755-.106 1.766-1.455 3.178-3.141 3.29zm-.089-1.617c-1.1.074-1.988-.874-1.934-2.026.053-.948.78-1.71 1.686-1.766 1.1-.074 1.988.874 1.934 2.026-.053.93-.798 1.71-1.686 1.766z">-->
+                                    <!--                                            </path>-->
+                                    <!--                                        </svg>-->
+                                    <!--                                        <span class="slider__content_views">860</span>-->
+                                    <!--                                    </div>-->
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div id="leftfooter" class=" d-flex flex-column my-flex-item">
-                    <div class="text-center-no text-center"><span>Topical</span> <a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
+                    <div class="text-center-no text-center"><span>Topical</span><a href="#" id="closeF" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
                     <div class="slider">
                         <div class = "slider__wrapper">
-    <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1551')">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> PROMOTION "PEACE, HAPPINESS, RUSSIA IN 2021" </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/sovfed-odobril-popravki-edinoj-rossii-v-lesnoj-kodeks-o-edinoj-sisteme-kontrolya -for-the-wood-turnover ') ">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> The Federation Council approved the amendments of United Russia to the Forestry Code of the unified system of control over timber turnover </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/watch-world-says-no-to-war-on-yemen-global-online-ally / ') ">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> WATCH: THE WORLD SAYS NO TO WAR FOR YEMEN - GLOBAL ONLINE RALLY </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1552')">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> WE ARE DIFFERENT, AND THIS IS OUR POWER AND PRIDE </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/gosduma-prinyala-zakonoproekt-edinoj-rossii-o-garazhnoj-amnistii-v-pervom-chtenii') ">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> The State Duma adopted United Russia’s bill on garage amnesty in the first reading </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/will-biden-break-with-trump-on-war-and-peace/')" >
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> WILL THERE BE A TRUMP ABOUT WAR AND PEACE? </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1553')">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> OPENING OF THE PHOTO EXHIBITION "WINTER STORIES-3" AT TVERSKY BOULEVARD </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/theyre-accountable-for-the-worst-humanitary-crisis-on-the-planet-lance -corporal-ahmed-al-babati-says / ') ">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> “They are responsible for the worst humanitarian crisis on the planet,” SAYS LANCE CORPORAL AHMED AL BABATI. </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/125-grammov-hleba-kak-simvol-v-den-snyatiya-blokady-leningrada-aktivisty-edinoj -russia-will-prove-shares-memory) ">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> 125 grams of bread as a symbol: on the day the blockade of Leningrad is lifted, United Russia activists will hold rallies </pre>
-        </div>
-    </div>
-    <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/kak-otlichit-sotrudnika-zhkh-ot-moshennika-razyasnyaet-aleksandr-kozlov')">
-        <div class = "slider__content">
-            <pre class = "slider__content_title"> How to distinguish a utility worker from a fraudster? Alexander Kozlov explains </pre>
-        </div>
-    </div>
-</div>
+                            <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1551')">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> PROMOTION "PEACE, HAPPINESS, RUSSIA IN 2021" </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/sovfed-odobril-popravki-edinoj-rossii-v-lesnoj-kodeks-o-edinoj-sisteme-kontrolya -for-the-wood-turnover ') ">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> The Federation Council approved the amendments of United Russia to the Forestry Code of the unified system of control over timber turnover </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/watch-world-says-no-to-war-on-yemen-global-online-ally / ') ">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> WATCH: THE WORLD SAYS NO TO WAR FOR YEMEN - GLOBAL ONLINE RALLY </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1552')">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> WE ARE DIFFERENT, AND THIS IS OUR POWER AND PRIDE </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/gosduma-prinyala-zakonoproekt-edinoj-rossii-o-garazhnoj-amnistii-v-pervom-chtenii') ">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> The State Duma adopted United Russia’s bill on garage amnesty in the first reading </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/will-biden-break-with-trump-on-war-and-peace/')" >
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> WILL THERE BE A TRUMP ABOUT WAR AND PEACE? </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('http://peacefond.ru/news/?id=1553')">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> OPENING OF THE PHOTO EXHIBITION "WINTER STORIES-3" AT TVERSKY BOULEVARD </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://www.stopwar.org.uk/article/theyre-accountable-for-the-worst-humanitary-crisis-on-the-planet-lance -corporal-ahmed-al-babati-says / ') ">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> “They are responsible for the worst humanitarian crisis on the planet,” SAYS LANCE CORPORAL AHMED AL BABATI. </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/125-grammov-hleba-kak-simvol-v-den-snyatiya-blokady-leningrada-aktivisty-edinoj -russia-will-prove-shares-memory) ">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> 125 grams of bread as a symbol: on the day the blockade of Leningrad is lifted, United Russia activists will hold rallies </pre>
+                                </div>
+                            </div>
+                            <div class = "slider__item" onclick = "window.open ('https://er.ru/activity/news/kak-otlichit-sotrudnika-zhkh-ot-moshennika-razyasnyaet-aleksandr-kozlov')">
+                                <div class = "slider__content">
+                                    <pre class = "slider__content_title"> How to distinguish a utility worker from a fraudster? Alexander Kozlov explains </pre>
+                                </div>
+                            </div>
+                        </div>
                         <script language="JavaScript" type="text/javascript" src="../js/textedit.js"></script>
                         <a class="slider__control slider__control_left" href="#" role="button"></a>
                         <a class="slider__control slider__control_right" href="#" role="button"></a>
@@ -328,21 +330,21 @@
                     <div class="text-center-no text-center"><span>News</span><a href="#" id="closeR" class="closeNews"><img style="height: 100%" src="../img/close.png"></a></div>
                     <div id="carouselhAuto">
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1083062')"><img src="../img/us1.jpg" /><br />
-                        <span class="thumbnail-text">Climate change is a ‘global emergency’, biggest ever opinion poll finds</span></a></div>
+                            <span class="thumbnail-text">Climate change is a ‘global emergency’, biggest ever opinion poll finds</span></a></div>
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1083022')"><img src="../img/us2.jpg" /><br />
-                        <span class="thumbnail-text">
+                            <span class="thumbnail-text">
                         UN health agency panel issues key guidance on second COVID vaccine doses</a></span></div>
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1082982')"><img src="../img/us3.jpg" /><br />
-                        <span class="thumbnail-text">
+                            <span class="thumbnail-text">
                         UN ready to support Palestinian elections, new envoy tells Security Council</span></div>
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1083032')"><img src="../img/us4.jpg" /><br />
-                        <span class="thumbnail-text">
+                            <span class="thumbnail-text">
                         Climate litigation spikes, giving courts an ‘essential role’ in addressing climate crisis</span></div>
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1082972')"><img src="../img/us5.jpg" /><br />
-                        <span class="thumbnail-text">
+                            <span class="thumbnail-text">
                         Mozambique: UN responds as thousands are caught in the wake of devastating Cyclone Eloise</span></div>
                         <div onclick="window.open('https://news.un.org/en/story/2021/01/1082992')"><img src="../img/us6.jpg" /><br />
-                        <span class="thumbnail-text">
+                            <span class="thumbnail-text">
                         UN rights experts urge Israel to respect international obligations</span></div>
                     </div>
                 </div>
